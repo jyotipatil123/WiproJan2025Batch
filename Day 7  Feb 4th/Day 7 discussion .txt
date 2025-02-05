@@ -1,0 +1,76 @@
+Day 7 discussion 
+
+Type-safe code accesses only the memory locations it is authorized to access. For example, type-safe code cannot read values from another object's private fields. It accesses types only in well-defined, allowable ways.
+
+During just-in-time (JIT) compilation, an optional verification process examines the metadata and Microsoft intermediate language (MSIL) of a method to be JIT-compiled into native machine code to verify that they are type safe. This process is skipped if the code has permission to bypass verification
+
+Although verification of type safety is not mandatory to run managed code, type safety plays a crucial role in assembly isolation and security enforcement. When code is type safe, the common language runtime can completely isolate assemblies from each other. This isolation helps ensure that assemblies cannot adversely affect each other and it increases application reliability.
+
+
+objects can be created for : 
+1. struct
+2. delegate
+3. class
+
+
+static void functions --can be called directly
+singlecast delegate --calling each and every function using function pointers 
+
+Events :
+windows applications -- mouse in , mouse hover, mouse out, click, double click 
+console applications 
+
+Events in C# are a powerful feature that allows objects to notify other objects when something interesting happens. They are commonly used for handling user actions, such as button clicks, but can be used for any situation where an object needs to signal that something has occurred.
+
+Key Concepts
+Delegate: A type that defines a method signature. An event is based on a delegate.
+
+Event: A message sent by an object to signal the occurrence of an action. Events are based on delegates and can be subscribed to by multiple methods.
+
+Publisher: The class that sends (or "raises") the event.
+
+Subscriber: The class that receives (or "handles") the event.
+
+===========================================================================================
+
+Reflection :
+
+Reflection in C# is a powerful feature that allows you to inspect and interact with the metadata of types at runtime. 
+
+It can be used to obtain information about assemblies, modules, and types. Reflection is commonly used for applications such as creating type browsers, building custom attribute-based frameworks, and performing late binding to methods and properties.
+
+Indices and Ranges : 
+Key Points
+Index from End: The ^ operator is used to specify an index relative to the end of the sequence. For example, words[^1] accesses the last element.
+
+Range Operator: The .. operator specifies the start and end of a range. For example, words[1..4] accesses elements from index 1 to index 3 (inclusive).
+
+Inclusive Start, Exclusive End: The start of the range is inclusive, but the end is exclusive. This means the start element is included in the range, but the end element is not1.
+
+====================================================================================
+Switch expressions in C# provide a concise and expressive way to perform pattern matching and value-based decision-making. They were introduced in C# 8.0 and have been further enhanced in subsequent versions, including C# 12. Here's an overview of switch expressions and how to use them:
+
+Using Declarations
+Using declarations in C# provide a way to declare and initialize an IDisposable resource, ensuring that it gets disposed of at the end of the scope. This is a more concise alternative to using statements.
+===============================================================================================
+primary constructors
+C# 12 introduces the concept of primary constructors, which simplify the declaration and initialization of classes by allowing constructor parameters to be declared directly within the class definition. This feature helps streamline the code by reducing boilerplate code for properties and constructors.
+
+
+============================================================================
+collection expressions : 
+Collection expressions in C# 12 bring a new, more concise way to initialize collections using collection literals and spread elements. This feature simplifies the creation and manipulation of collections, making the code more readable and expressive.
+
+Key Concepts
+Collection Literals: Allow you to define collections using array-like syntax.
+
+Spread Elements: Allow you to include the contents of another collection within a collection literal using the .. operator.
+
+List Patterns: Enable matching of elements within collections for pattern matching.
+
+
+
+
+
+
+

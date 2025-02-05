@@ -1,0 +1,191 @@
+Day 6 discussion
+=====================================================================
+Exception handling in c#
+
+try, catch, finally 
+1 try can have 1 catch
+1 try can have number of catches
+
+Exception is the main class ---ex.message 
+
+only 1 try ---- not possible
+1 try-- 1 finally --possible 
+
+types : 
+1. built in classes for exception
+2. user defined exception classes - custom exception 
+
+
+In C#, exceptions are used to handle errors and other exceptional conditions. Here are some of the common exception classes you might encounter:
+
+System.Exception: The base class for all exceptions in C#.
+
+System.SystemException: The base class for predefined exceptions in the System namespace.
+
+System.ApplicationException: Used as a base class for application-defined exceptions.
+
+System.ArgumentException: Thrown when one of the arguments provided to a method is not valid.
+
+System.ArgumentNullException: Thrown when a null argument is passed to a method that does not accept it.
+
+System.ArgumentOutOfRangeException: Thrown when the value of an argument is outside the allowable range.
+
+System.IndexOutOfRangeException: Thrown when an attempt is made to access an element of an array or collection with an index that is outside its bounds.
+
+System.InvalidOperationException: Thrown when a method call is invalid for the object's current state.
+
+System.NullReferenceException: Thrown when there is an attempt to dereference a null object reference.
+
+System.IO.IOException: The base class for exceptions that occur during I/O operations.
+
+System.NotSupportedException: Thrown when an invoked method is not supported, or when there is an attempt to access a class member that is not supported in the current version of the class.
+
+System.OutOfMemoryException: Thrown when there is not enough memory to continue the execution of a program.
+
+//----------------------------------------------------------------------------------
+Custom exception
+
+user defined exception 
+
+
+exception filters --c# 6.0 
+
+==========================================================================================
+Here are some best practices for exception handling in C# to help you write more robust and maintainable code:
+
+Catch Only What You Can Handle:
+
+Only catch exceptions that you can handle meaningfully. Let others propagate to higher levels in the call stack.
+
+Use Specific Exception Types:
+
+Catch specific exceptions rather than using a general catch (Exception ex). This avoids catching unexpected exceptions that you can't handle appropriately.
+
+Avoid Swallowing Exceptions:
+
+Do not catch exceptions without handling them or at least logging them. Swallowed exceptions can make debugging difficult.
+
+Log Exceptions:
+
+Always log exceptions with as much context information as possible. Use logging libraries such as NLog, log4net, or Serilog.
+
+Use Exception Filters:
+
+Utilize exception filters (available in C# 6.0 and later) to add conditions for catching exceptions. This allows you to catch exceptions based on additional criteria.
+
+Do Not Use Exceptions for Flow Control:
+
+Exceptions should not be used for controlling the normal flow of a program. They are meant for exceptional conditions, not for regular logic.
+
+Cleanup with Finally:
+
+Use the finally block to clean up resources like file handles, database connections, or memory, ensuring they are always released.
+
+Provide Meaningful Messages:
+
+Ensure that your exception messages are clear and provide meaningful information to help diagnose the issue.
+
+Use Custom Exceptions:
+
+Create custom exception classes for specific error conditions in your application. This helps in distinguishing between different types of errors.
+
+Document Exception Usage:
+
+Document the exceptions that your methods can throw. This helps other developers understand the potential errors they need to handle.
+
+Wrap External Calls:
+
+Wrap calls to external systems (e.g., file I/O, network, database) in try-catch blocks to handle potential exceptions.
+
+Avoid Catching System.Exception:
+
+Avoid catching System.Exception unless you are at the topmost level of your application. This can mask other types of exceptions that you should handle differently.
+
+====================================================================================================================================
+c# 7.0  -- extension methods 
+
+Local functions : 
+Local functions in C# 7.0 allow you to define a method within the scope of another method. This can help improve code readability and encapsulation by keeping related logic together. Local functions can access variables from the containing method, which makes them very convenient for small helper methods.
+-----------------------------------------------------------------------
+Out variables in C# 7.0 provide a way to declare variables inline within an out parameter call. This feature enhances the readability and conciseness of your code by allowing you to declare out variables directly at the point where they are passed to a method.
+-----------------------------------------------------------------------------
+Ref Locals and Returns :
+
+Discards :
+Discards in C# are a feature introduced in C# 7.0 that allow you to intentionally ignore values that you do not need. This can make your code cleaner and more readable by explicitly indicating that certain values are not used. Discards are represented by the _ (underscore) character.
+
+------------------------------------------------------------------------------
+Expression-bodied members were introduced in C# 6.0 and further expanded in later versions to provide a more concise syntax for methods, properties, constructors, and finalizers. This feature allows you to write more compact code using lambda expressions.
+
+//---------------------------------------------------------------------------
+Importance of searching in data structures
+Types of searching algorithms (Linear vs Binary)
+
+Types of sorting algorithms (Comparison-based vs Non-comparison-based)
+Bubble Sort, Selection Sort , Insertion Sort 
+
+"Efficiency comparison among Bubble, Selection, and Insertion Sort
+Real-world scenarios for each sorting algorithm"
+
+
+===================================================================
+Searching : 
+1. Linear search program
+2. binary search program
+
+Sorting algorithms : 
+1. bubble sort
+2. selection sort
+3. Insertion sort
+
+----------------------------------------------------------
+
+Indexers
+indexers Vs properties
+attributes
+
+Indexers in C# allow objects to be indexed in a similar way to arrays. They provide a way to access elements within an object using array-like syntax, which can make code more intuitive and easier to read. Indexers are particularly useful for custom collection classes.
+
+Purpose and Usage:
+
+Properties: It is designed to expose and control access to individual attributes or values within a class.
+Indexers: It is specialized for scenarios where the class represents a collection or container, enabling index-based retrieval and assignment.
+Declaration:
+
+Properties: Declared using get and set accessors, encapsulating fields and providing controlled access.
+Indexers: Declared using the this keyword and square brackets, allowing for index-based access.
+Applicability:
+
+Properties: It is ideal for exposing and managing the state of an object, enforcing encapsulation and information hiding.
+Indexers: It is suited for classes representing collections, offering a convenient way to access elements using indices.
+Custom Logic:
+=======================================================
+
+Properties Vs. Indexers 
+
+
+Properties: It allows execution of custom logic during value retrieval or assignment.
+Indexers: It is primarily focused on index-based access, with less emphasis on custom logic during access operations.
+Access Mechanism:
+
+Properties: It is accessed using the dot notation (e.g., Property), providing a clean and straightforward way to interact with individual attributes.
+Indexers: It is accessed using square brackets and an index (e.g., object[index]), allowing for a more array-like syntax suitable for classes representing collections.
+Number of Parameters:
+
+Properties: It typically involves a single parameter less accessor for both reading and writing values.
+Indexers: It involves an index parameter, allowing for different overloads to handle various index types or multiple parameters based on the specific use case.
+Value Retrieval and Assignment:
+
+Properties: It is primarily focused on the retrieval (get) and assignment (set) of individual values, providing fine-grained control over access.
+Indexers: It is specialized in index-based retrieval and assignment, treating the object as a container where elements can be accessed and modified by their position.
+Applicability to Collections:
+
+Properties: It is typically used for scalar values or attributes within a class, enhancing readability and maintainability when dealing with individual properties.
+Indexers: Excel in scenarios where the class represents a collection, providing a natural and intuitive way to access elements using indices.
+
+
+
+
+
+
+
