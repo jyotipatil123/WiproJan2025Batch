@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            color: green;
+        }
+
+        body
+        {
+            text-align: center;
+        }
+
+        .example {
+            padding: 10px;
+            margin: auto;
+            margin-top: 10px;
+            border: 1px solid black;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h4 class="example">
+            div1
+        </h4>
+        <h4 class="yellowBorder example">
+            div2
+        </h4>
+        <h4 class="greenBorder example" style="text-align: left">
+            div3
+        </h4>
+         <h4 class="greenBorder example">
+            div4
+        </h4>
+        <h4 class="example">
+            div5
+        </h4>
+    </div>    
+    
+    <script>
+        document.getElementsByClassName('greenBorder example')[0]
+            .style.border = "10px solid green";
+    
+        document.getElementsByClassName('greenBorder example')[1]
+            .style.border = "10px solid green";
+        
+        
+        document.getElementsByClassName('yellowBorder example')[0].style.border="10px solid yellow";
+    </script>
+</body>
+
+</html>
