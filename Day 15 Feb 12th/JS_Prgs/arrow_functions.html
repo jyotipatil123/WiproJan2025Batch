@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow functions demo</title>
+</head>
+<body>
+<script>
+
+// Traditional function expression
+const add = function(a, b) {
+  return a + b;
+};
+
+let result=add(10,2);
+console.log(result);
+    
+// Arrow function equivalent
+const add1 = (a, b) => a + b;
+ let result1=add1(10,2);
+console.log(result1);   
+    
+let square = a =>{ return a*a;}
+console.log(square(5));
+
+const createUser = (name, age) => ({ name, age });
+console.log(createUser('Alice', 25)); // Output: { name: 'Alice', age: 25 }
+
+    
+class Person {
+  constructor(name) {
+        this.name = name;
+     }
+  greet() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+}
+    
+const person = new Person("Alice");
+person.greet(); // Output: Hello, my name is Alice
+ 
+const name = 'Alice';
+const greeting = `Hello, ${name}!`;   
+console.log(greeting); // Output: Hello, Alice!
+
+    
+const [a, b] = [1, 2];
+const { x, y } = { x: 3, y: 4 };
+console.log(a,b);
+console.log(x,y);
+    
+
+/* default parameters */
+function greet(name = 'Guest') {
+  console.log(`Hello, ${name}`);
+}
+greet(); 
+
+/* Rest and spread operators */
+    
+function sum(...numbers) {
+  return numbers.reduce((acc, val) => acc + val, 0);
+}
+console.log(sum(1, 2, 3,10,5,6,7)); // Output: 6
+
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+const combined = [...arr1, ...arr2];
+
+array.reduce(callback(accumulator, currentValue, currentIndex, array), initialValue);
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</script>    
+</body>
+</html>

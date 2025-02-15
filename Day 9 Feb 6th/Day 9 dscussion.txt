@@ -1,0 +1,101 @@
+Day 9 discussion
+
+.net core features
+
+launsettings.json
+   iis 
+
+Practice programs : 
+
+1. create a page About us.
+2. Create a page Contact us.
+3. add the menu and navigate to the respective pages.
+===================================================================
+
+asp.net  --traditional    windows 
+===================================================================
+multiple platforms :  mac, windows, android, linux 
+asp.net razor pages
+asp.net mvc applications 
+
+==============================================================================
+.net Core Vs .net framework 
+
+NET Core
+1. Cross-Platform:
+
+Capability: Runs on Windows, macOS, and Linux.
+
+Use Case: Ideal for projects that need to run on multiple operating systems.
+
+2. Performance:
+
+Capability: Generally faster and more efficient due to optimizations and improvements.
+
+Use Case: Suitable for high-performance applications and services.
+
+3. Modern Development:
+
+Capability: Supports the latest C# features and libraries.
+
+Use Case: Preferred for new development projects.
+
+4. Microservices and Containers:
+
+Capability: Well-suited for microservices architecture and can be containerized using Docker.
+
+Use Case: Ideal for modern cloud-based applications and scalable microservices.
+
+5. Modular and Lightweight:
+
+Capability: Applications can use only the required libraries, reducing the overall footprint.
+
+Use Case: Suitable for lightweight applications and those requiring modularity.
+
+.NET Framework
+1. Windows-Only:
+
+Capability: Runs exclusively on Windows.
+
+Use Case: Suitable for projects that are tied to the Windows ecosystem.
+
+2. Established and Mature:
+
+Capability: Has been around for a long time with a wide range of libraries and tools.
+
+Use Case: Ideal for maintaining and extending existing applications built on .NET Framework.
+
+3. Comprehensive Libraries:
+
+Capability: Extensive library support for various functionalities.
+
+Use Case: Useful when leveraging existing libraries that may not be available in .NET Core.
+
+4. Legacy Systems:
+
+Capability: Integrates well with legacy Windows applications and systems.
+
+Use Case: Preferred when working with legacy codebases and systems that depend on .NET Framework.
+
+5. Web Forms and WCF:
+
+Capability: Supports older technologies like ASP.NET Web Forms and Windows Communication Foundation (WCF).
+
+Use Case: Suitable for applications that rely on these technologies
+
+
+
+validators : 
+1. range validator
+2. regular expression validator 
+3. required field
+4. validation summary
+5. custom validation 
+
+
+
+
+
+
+
+

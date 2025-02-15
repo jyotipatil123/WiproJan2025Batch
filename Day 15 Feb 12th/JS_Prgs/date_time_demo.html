@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date time objects </title>
+    
+    <script>
+/*
+let date = new Date();
+console.log(date.getFullYear()); 
+console.log(date.getMonth()); 
+console.log(date.getDate()); 
+console.log(date.getHours()); 
+console.log(date.getMinutes()); 
+console.log(date.getSeconds()); 
+console.log(date.getMilliseconds()); 
+console.log(date.getDay()); 
+        
+// adding the date
+let date = new Date();
+date.setDate(date.getDate() + 5);
+console.log(date.toString()); 
+// Date 5 days from now   */
+
+function outerFunction() {
+  let outerVariable = "I'm from the outer function!";
+
+  function innerFunction() {
+    console.log(outerVariable); // Accesses outerVariable from the outerFunction
+  }
+
+  return innerFunction;
+}
+
+const closureExample = outerFunction(); // closureExample now holds innerFunction
+closureExample(); // Output: "I'm from the outer function!"
+
+
+        
+        
+        
+        
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,88 @@
+Day 16 discussion
+
+TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. TypeScript is pure object oriented with classes, interfaces and statically typed like C# or Java. The popular JavaScript framework Angular 2.0 is written in TypeScript. Mastering TypeScript can help programmers to write object-oriented programs and have them compiled to JavaScript, both on server side and client side.
+
+Why Learn TypeScript?
+TypeScript is a popular choice for developing web applications. It is also used in other areas such as game development and server-side development. 
+
+TypeScript is a free and open-source high-level programming language. 
+
+It’s very easy to learn if you are already familiar with JavaScript. You need to understand the type system and related syntax to apply them to JavaScript code. By mastering TypeScript, you'll be well-positioned for a variety of software development roles.
+
+In addition to the above, here are some more reasons to learn the TypeScript programming language.
+
+It adds static typing with optional type annotations to JavaScript.
+TypeScript is designed for the development of large applications.
+It helps developers catch errors early in their code editor.
+It supports all the latest ECMAScript features.
+TypeScript is the recommended language for creating apps with the Angular framework.
+It can also be used for game development and server-side development.
+All the big companies such as Microsoft, Google, Meta, Amazon, etc., use TypeScript.
+TypeScript supports JavaScript libraries. You can easily use JavaScript libraries in your TypeScript projects.
+A huge community of TypeScript is available on the internet and growing rapidly. Anyone can easily get support.
+There are tons of jobs available for those who know TypeScript.
+
+Compilation : 
+     .ts  =========>  tsc    .ts======>  .js
+
+
+Environment setup : 
+any editor
+VS code 
+
+or
+any online TS compiler 
+
+install node js
+install npm 
+
+Installing typescript : 
+
+npm install -g typescript
+
+if ts-node not works : 
+npm install -g ts-node
+
+
+tsc --init
+tsc app.ts
+node app.js
+
+
+tsc ./firstfile.ts
+ ts-node ./firstfile.ts 
+
+scope : 
+1. class scope
+2. global scope
+3. local scope
+------------------------------------------------------------------
+
+IEnumerable
+IComparer
+IComparable
+IList
+ICollection
+
+
+SPA 
+single page applications
+
+angular / react/ express/ knockout / ember/ vue / javascript / ES6+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

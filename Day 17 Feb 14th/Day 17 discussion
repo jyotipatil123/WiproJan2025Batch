@@ -1,0 +1,130 @@
+Day 17 discussion
+
+Testing web api /services 
+
+1. Postman
+2. Fiddler
+3. swagger 
+=============================
+http://localhost:3000/api/items/10
+httpmethod : delete 
+delete the particular id =10
+
+http://localhost:3000/api/items/12
+httpmethod : delete 
+delete the particular id =12
+
+http://localhost:3000/api/items/10
+httpmethod : update/put/modify
+delete the particular id =100
+
+
+employee
+empid   fn  ln   city
+101     aa  jj   bangalore 
+102     bb  kk   delhi
+103     cc  ll   gujrat
+104     dd  pp   Hyd
+
+DML
+insert into employee(column names) values(datas)
+delete
+
+- update gujrat to mysore
+
+update employee set city='mysore' where empid=103
+
+{
+   "employee"
+   {
+     "empid" : 101;
+     "fn"    : "aa";
+     "ln"    : "jj";
+     "city"  : "bangalore";
+   },
+
+......
+
+res.status(200).send(`New item created: ${JSON.stringify(newItem)}`);
+
+
+clothes : 
+   women
+      frocks
+          kids 
+          long frocks
+      skirts 
+   men 
+      tshirts
+      pants 
+
+
+
+SOLID PRINCIPLES
+DESIGN PATTERNS
+
+public class UserManager
+{
+    public bool AuthenticateUser(string username, string password)
+    {
+        // Authentication logic
+        return true;
+    }
+
+    public void AddUser(string username, string password)
+    {
+        // Logic to add a user to the database
+    }
+
+    public void RemoveUser(string username)
+    {
+        // Logic to remove a user from the database
+    }
+}
+
+UseManager obj= new UseManager();
+obj.AuthenticateUser();
+obj.AddUser();
+obj.RemoveUser();
+
+
+html file----js code 
+
+<p id="demo"></p>
+
+document.getElementById("demo");
+=============================================================
+React : 
+Javascript---> write HTML
+
+The virtual dom is a representation of the real dom. Instead of directly changing and manipulating the real DOM, which can be slow and less efficient. React creates a copy of the DOM where changes are initially made.
+===============================================================================================
+Practice program :
+
+Using Modules : 
+
+india module
+    Welcome to India
+
+London
+    Welcome to London
+
+US
+    Welcome to US 
+=================================================================================================
+
+components Vs modules 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

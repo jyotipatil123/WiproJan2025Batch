@@ -1,0 +1,12 @@
+Day 8 discussion
+
+Lambda expressions 
+
+Async and await 
+
+ synchronous 
+ asynchronous
+TPL  task parallel library
+PLinq  parallel Linq
+Linq : language integrated query 
+    - lamda expression 

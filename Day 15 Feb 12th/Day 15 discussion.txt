@@ -1,0 +1,121 @@
+Day 15 discussion
+
+Javascript : 
+Editors : notepad, notepad++, vim, 
+          brackets, sublime ....
+scripting language 
+OOPS
+particular program structure 
+page -interactive JS 
+
+vbscript 
+Javascript ---vue js, knockout js, 
+angular js, react js, ember js, 
+
+Operators : 
+1. arithemetic operators + * - /
+2. relational operators < > <= >= <> !=
+3. logical operators and, or, not
+4. assignment operator =
+5. comparison operator ==
+6. equality ===
+7. ternary operator ?:
+
+let
+const
+JavaScript has 8 Datatypes
+String
+Number
+Bigint
+Boolean
+Undefined
+Null
+Symbol
+Object
+
+
+Arrays : 
+similar type of datas 
+
+conditional statements : 
+1. if
+2. if...else
+3. if...elseif...elseif
+
+Loops : 
+1. for
+2. while
+3. do_while
+4. foreach
+
+html controls : button, radio, checkbox, password
+drop down list :
+<select>
+   <option> .... </option>
+</select>
+
+ul...li
+ol...li
+
+select city :
+ddl...with cities
+
+   <select id="cities" name="cities" multiple>
+        <option value="new_york">New York</option>
+          <option value="Bhopal">Bhopal</option>
+            <option value="la">LA</option>
+        
+    </select>
+
+
+
+css class : 
+
+example.css
+  .myclass1
+  {
+    font-size:12pt;
+    font-family:arial;
+  }
+
+  .myclass2
+  {
+     text-align:center;
+  }     
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
